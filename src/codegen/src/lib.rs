@@ -1,4 +1,4 @@
-pub fn generate(ast: &parser::Ast) -> String {
+pub fn generate(ast: &parser::Ast) -> anyhow::Result<()> {
     println!("Generating code from AST: {:?}", ast);
-    "// generated code".into()
+    Ok(())
 }
