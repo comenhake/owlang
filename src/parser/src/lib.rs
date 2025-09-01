@@ -23,5 +23,8 @@ pub struct AstNode {
 
 pub fn parse(_tokens: Vec<Token>) -> anyhow::Result<AstNode> {
     // placeholder
-    Ok(AstNode { kind: "Root".into(), children: vec![] })
+    Ok(AstNode {
+        kind: "Root".into(),
+        children: vec![],
+    })
 }
