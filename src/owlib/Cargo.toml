@@ -1,0 +1,10 @@
+[package]
+name = "owlib"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+codegen = { version = "0.1.0", path = "../codegen" }
+lexer = { version = "0.1.0", path = "../lexer" }
+parser = { version = "0.1.0", path = "../parser" }
+semantic = { version = "0.1.0", path = "../semantic" }

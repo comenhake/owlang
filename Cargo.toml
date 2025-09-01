@@ -1,0 +1,23 @@
+[workspace]
+
+resolver = "3"
+members = [
+
+  "src/owc",        # CLI binary crate (owc)
+  "src/owlib",      # core compiler library crate (glue)
+  "src/owm",        # package manager crate (owm)
+  "src/tools/formatter",
+  "src/tools/linter",
+
+  "tooling/lsp",
+
+  # you can add more members for lexer, parser as separate crates:
+
+  "src/lexer",
+  "src/parser",
+  "src/semantic",
+  "src/codegen",
+]
+
+[workspace.metadata]   # Optional workspace-wide settings
+edition = "2024"

@@ -1,0 +1,16 @@
+[package]
+name = "owc"
+version = "0.1.0"
+edition = "2024"
+default-run = "owc"
+
+[dependencies]
+clap = { version = "4.5.46", features = ["derive"] } # CLI parsing
+anyhow = "1.0.99"
+
+owlib = { path = "../owlib" }  # relative path to your library crate
+codegen = { version = "0.1.0", path = "../codegen" }
+lexer = { version = "0.1.0", path = "../lexer" }
+parser = { version = "0.1.0", path = "../parser" }
+semantic = { version = "0.1.0", path = "../semantic" }
+
