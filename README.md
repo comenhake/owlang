@@ -4,6 +4,8 @@
     ![License](https://img.shields.io/github/license/anisiocode/owlang)
     ![Issues](https://img.shields.io/github/issues/anisiocode/owlang)
 
-    <h1>🦉 OwLang</h1>
+    ### 🦉 OwLang
+
     A simple programming language compiler
+
 </div>
