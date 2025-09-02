@@ -2,16 +2,12 @@
 
 <img src="docs/assets/owlang.png" alt="Owlang" width="150"/>
 
-##
-
 ![CI](https://github.com/anisiocode/owlang/actions/workflows/ci.yml/badge.svg)
 ![License](https://img.shields.io/github/license/anisiocode/owlang)
 ![Issues](https://img.shields.io/github/issues/anisiocode/owlang)
 ![stars](https://img.shields.io/github/stars/anisiocode/owlang)
 
-##
-
-# 🦉 OwLang
+### Owlang <img src="docs/assets/owlang_icon.svg" alt="Owlang" width="20"/>
 
 </div>
 
@@ -23,10 +19,6 @@ The language features a clean and intuitive syntax, allowing users to focus on p
 > #### ⚠️ Experimental — Owlang is in active early development.
 >
 > Owlang is in its early experimental phase. Expect rapid iterations and breaking changes.
->
-> The project is currently in active development, with a focus on implementing core language features and improving tooling support. We welcome contributions from the community and are excited to see what you build with OwLang!
-
----
 
 ## 📖 Documentation
 
@@ -35,6 +27,8 @@ The language features a clean and intuitive syntax, allowing users to focus on p
 - [Compiler Pipeline](docs/compiler_pipeline.md)
 - [Contributing Guide](docs/contributing.md)
 - [Roadmap](docs/roadmap.md)
+
+---
 
 <details>
   <summary>📂 Repository Structure</summary>
@@ -60,7 +54,8 @@ owlang/
 
 </details>
 
-## 🛠️ Toolchain Setup
+<details>
+  <summary>🛠️ Toolchain Setup</summary>
 
 #### Requirements
 
@@ -77,7 +72,7 @@ owlang/
 ./scripts/bootstrap.ps1
 ```
 
-### ▶️ Usage
+#### Usage
 
 Compile and run the compiler with:
 
@@ -87,7 +82,12 @@ cargo run --bin owc -- --file examples/hello.ow
 
 > Where `hello.ow` is a source file in Owlang.
 
-### 📦 Package Manager (owm)
+</details>
+
+<details>
+  <summary>Others</summary>
+
+#### 📦 Package Manager (owm)
 
 Owlang will ship with a package manager called `owm`. This tool will help you manage your Owlang projects and dependencies.
 
@@ -95,8 +95,10 @@ Owlang will ship with a package manager called `owm`. This tool will help you ma
 cargo run --bin owm
 ```
 
-### ✅ Development Workflow
+#### ✅ Development Workflow
 
 - Format code with `cargo fmt --all`
 - Run tests with `cargo test --all`
 - Lint with Clippy: `cargo clippy --all -- -D warnings`
+
+</details>

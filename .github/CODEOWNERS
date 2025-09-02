@@ -1,34 +1,42 @@
 # Global default owner (fallback)
-* @anisiocode
+
+- @anisiocode
 
 # Core compiler pipeline
-/src/lexer/        @anisiocode
-/src/owc/          @anisiocode
-/src/parser/       @anisiocode
-/src/semantic/     @anisiocode
-/src/codegen/      @anisiocode
-/src/owlib/        @anisiocode
-/src/tools/        @anisiocode
-/src/owm/          @anisiocode
+
+/src/lexer/ @anisiocode
+/src/owc/ @anisiocode
+/src/parser/ @anisiocode
+/src/semantic/ @anisiocode
+/src/codegen/ @anisiocode
+/src/owlib/ @anisiocode
+/src/tools/ @anisiocode
+/src/owm/ @anisiocode
 
 # Tooling (LSP, VSCode extension, snippets)
- /tooling/         @anisiocode
+
+/tooling/ @anisiocode
 
 # Scripts
-/scripts/          @anisiocode
+
+/scripts/ @anisiocode
 
 # Examples and templates
-/examples/         @anisiocode
+
+/examples/ @anisiocode
 
 # Documentation
-/docs/             @anisiocode
+
+/docs/ @anisiocode
 
 # GitHub metadata & workflows
-/.github/          @anisiocode
+
+/.github/ @anisiocode
 
 # Repo-level configs
-/Cargo.toml        @anisiocode
-/ow.toml           @anisiocode
-/README.md         @anisiocode
-/LICENSE           @anisiocode
-/CONTRIBUTING.md   @anisiocode
+
+/Cargo.toml @anisiocode
+/ow.toml @anisiocode
+/README.md @anisiocode
+/LICENSE @anisiocode
+/CONTRIBUTING.md @anisiocode
