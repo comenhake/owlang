@@ -16,7 +16,7 @@ This repository contains the compiler (`owc`), package manager (`owm`), and deve
 
 The language features a clean and intuitive syntax, allowing users to focus on problem-solving rather than getting bogged down by complex language rules. With a strong emphasis on educational use, OwLang provides a gentle introduction to programming while still being powerful enough for more advanced projects.
 
-> #### ⚠️ Experimental — Owlang is in active early development.
+> ⚠️ Experimental — Owlang is in active early development.
 >
 > Owlang is in its early experimental phase. Expect rapid iterations and breaking changes.
 
