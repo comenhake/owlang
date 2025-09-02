@@ -1,0 +1,76 @@
+(*
+  Owlang EBNF (Draft v0.1)
+  Philosophy: syntax close to natural language, with blocks per indentation.
+  Tokens such as INDENT/DEDENT/NEWLINE are the responsibility of the lexer.
+*)
+
+program        = { NEWLINE }, { statement, NEWLINE } ;
+
+statement      = simple_stmt | compound_stmt ;
+
+simple_stmt    = assignment
+               | say_stmt
+               | expr ;
+
+assignment     = IDENT, WS1, "is", WS1, expr ;
+
+say_stmt       = "say", WS1, expr ;
+
+compound_stmt  = if_stmt | while_stmt ;
+
+if_stmt        = "if", WS1, expr, WS1, "then", suite, [ NEWLINE, "otherwise", suite ] ;
+
+while_stmt     = "while", WS1, expr, WS1, "then", suite ;
+
+suite          = ( WS0, NEWLINE, INDENT, { statement, NEWLINE }, DEDENT )
+               | WS1, simple_stmt ;
+
+(* ---------------- Expressions ---------------- *)
+
+expr           = assign_expr ;
+
+assign_expr    = or_expr
+               | IDENT, WS1, "is", WS1, expr ;
+               (* "is" is of lower precedence and is right-associative *)
+
+or_expr        = and_expr, { WS1, "or", WS1, and_expr } ;
+and_expr       = not_expr, { WS1, "and", WS1, not_expr } ;
+
+not_expr       = [ "not", WS1 ], equality_expr ;
+               (* "not" has lower precedence than "=" and higher than "and"/"or" *)
+
+equality_expr  = relational_expr, { WS1, "=", WS1, relational_expr } ;
+
+relational_expr= additive_expr,
+                 { WS1, ( "<" | ">" | "<=" | ">=" ), WS1, additive_expr } ;
+
+additive_expr  = multiplicative_expr,
+                 { WS0, ( "+" | "-" ), WS0, multiplicative_expr } ;
+
+multiplicative_expr
+               = unary_expr,
+                 { WS0, ( "*" | "/" | "%" ), WS0, unary_expr } ;
+
+unary_expr     = [ "-" ], primary ;
+
+primary        = literal
+               | IDENT
+               | "(", WS0, expr, WS0, ")" ;
+
+literal        = NUMBER
+               | STRING
+               | "true"
+               | "false" ;
+
+(* ---------------- Lexical scaffolding ---------------- *)
+
+IDENT          = /* [a-zA-Z_][a-zA-Z0-9_]*, except keywords */ ;
+NUMBER         = /* int or float with _ separator and optional exponent */ ;
+STRING         = /* "..." with escapes, or """...""" multiline */ ;
+
+WS0            = { " " | "\t" } ;
+WS1            = ( " " | "\t" ), WS0 ;
+
+NEWLINE        = /* normalized end-of-line */ ;
+INDENT         = /* consistent increase in indentation (lexer) */ ;
+DEDENT         = /* corresponding decrease (lexer) */ ;

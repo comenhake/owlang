@@ -23,6 +23,7 @@ The language features a clean and intuitive syntax, allowing users to focus on p
 ## 📖 Documentation
 
 - [Getting Started](docs/getting_started.md)
+- [Language Specification](docs/language_spec.md)
 - [Architecture Overview](docs/architecture.md)
 - [Compiler Pipeline](docs/compiler_pipeline.md)
 - [Contributing Guide](docs/contrib/contributing.md)
