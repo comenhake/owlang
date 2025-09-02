@@ -7,7 +7,7 @@
 ![Issues](https://img.shields.io/github/issues/anisiocode/owlang)
 ![stars](https://img.shields.io/github/stars/anisiocode/owlang)
 
-### Owlang <img src="docs/assets/owlang_icon.svg" alt="Owlang" width="20"/>
+### Owlang <img src="docs/assets/owlang_icon.svg" alt="Owlang" width="20" align="center"/>
 
 </div>
 
@@ -25,7 +25,7 @@ The language features a clean and intuitive syntax, allowing users to focus on p
 - [Getting Started](docs/getting_started.md)
 - [Architecture Overview](docs/architecture.md)
 - [Compiler Pipeline](docs/compiler_pipeline.md)
-- [Contributing Guide](docs/contributing.md)
+- [Contributing Guide](docs/contrib/contributing.md)
 - [Roadmap](docs/roadmap.md)
 
 ---
@@ -101,4 +101,11 @@ cargo run --bin owm
 - Run tests with `cargo test --all`
 - Lint with Clippy: `cargo clippy --all -- -D warnings`
 
-</details>
+## </details>
+
+---
+
+### 📜 License
+
+Owlang is currently licensed under [MIT License](#LICENSE.md)
+> ⚠️ The license may change before the 1.0 release.
