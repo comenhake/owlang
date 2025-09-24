@@ -1,5 +1,9 @@
-> [!IMPORTANT]
-> Project under constructions, nothing to see here!!
+> [!IMPORTANT]  
+> 🚧 Project under heavy construction 🚧  
+> This repository is currently in an early development phase.  
+> Its purpose at this stage is solely to support internal visualization, structuring, and organization of the project.  
+> Public documentation, stable releases, and contributions will be enabled once the project reaches a mature state.  
+
 
 ---
 <div align="center">
