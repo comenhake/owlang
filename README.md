@@ -1,9 +1,5 @@
-<div aling="center">
-
 > [!WARNING]
 > Project under constructions, nothing to see here!!
-
-</div>
 
 ---
 <div align="center">
